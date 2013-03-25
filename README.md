@@ -1,4 +1,5 @@
-coisas_vi
-=========
+Copiando e Colando... 
+---
 
-Pasta raiz do diretório do VIM
+- Pasta Raiz de Usuário, para os arquivos do VI(M)
+- Apenas Copiar e colar
