@@ -1,20 +1,13 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => General
+" => Geral
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Sets how many lines of history VIM has to remember
-set history=700
+set history=700    " Quantas linhas de Histórico o VIM deve Lembra0
+filetype plugin on " Plugins por tipo de Arquivo
+filetype indent on " Indentação por Tipo de Arquivo
 
-" Enable filetype plugins
-filetype plugin on
-filetype indent on
+set autoread       " Altera arquivo quando alterado externamente
 
-" Set to auto read when a file is changed from the outside
-set autoread
 
-" With a map leader it's possible to do extra key combinations
-" like <leader>w saves the current file
-let mapleader = ","
-let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -187,95 +180,58 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-set statusline=\ Arquivo:\ %{HasPaste()}%F%m%r%h\ %w\ \ Diretório:\ %r%{getcwd()}%h\ \ \ Linha:\ %l\ \ \ Coluna:\ %c
+set statusline=%<%f\ \ Linha:\ %l,Total\ :%L,%c%V\ %P 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Editing mappings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remap VIM 0 to first non-blank character
-map 0 ^
-
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => vimgrep searching and cope displaying
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" When you press gv you vimgrep after the selected text
-"vnoremap <silent> gv :call VisualSelection('gv')<CR>
-
-" Open vimgrep and put the cursor in the right position
-map <leader>g :vimgrep // **/*.<left><left><left><left><left><left><left>
-
-" Vimgreps in the current file
-map <leader><space> :vimgrep // <C-R>%<C-A><right><right><right><right><right><right><right><right><right>
-
-" When you press <leader>r you can search and replace the selected text
-vnoremap <silent> <leader>r :call VisualSelection('replace')<CR>
-
-" Do :help cope if you are unsure what cope is. It's super useful!
-"
-" When you search with vimgrep, display your results in cope by doing:
-"   <leader>cc
-"
-" To go to the next search result do:
-"   <leader>n
-"
-" To go to the previous search results do:
-"   <leader>p
-"
-map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
-map <leader>n :cn<cr>
-map <leader>p :cp<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Spell checking
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Pressing ,ss will toggle and untoggle spell checking
-map <leader>ss :setlocal spell!<cr>
-
-" Shortcuts using <leader>
-map <leader>sn ]s
-map <leader>sp [s
-map <leader>sa zg
-map <leader>s? z=
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Misc
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Remove the Windows ^M - when the encodings gets messed up
-noremap <Leader>m mmHmt:%s/<C-V><cr>//ge<cr>'tzt'm
-
-" Quickly open a buffer for scripbble
-map <leader>q :e ~/buffer<cr>
-
-" Toggle paste mode on and off
-map <leader>pp :setlocal paste!<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Atalhos Personalizados
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <F2> :w<cr>
-imap <F2><ESC> :w<cr>
+" Salvar com F2
+  map  <F2> :w<cr>
+  imap <F2><ESC> :w<cr>
+
+" Toggle no modo de Colagem
+  map <leader>pp :setlocal paste!<cr>
+
+" Remove the Windows ^M - when the encodings gets messed up
+  noremap <Leader>m %s/<C-V><cr>//g<cr>
+
+" Setando Tecla LEADER
+  let mapleader   = ","
+  let g:mapleader = ","
+
+" Movimentaçao entre janelas
+  noremap <C-j> <C-W>j
+  noremap <C-k> <C-W>k
+  noremap <C-l> <C-W>l
+  noremap <C-h> <C-W>h
+
+" Redimensionando Janelas
+  noremap <A-Up> <C-w>+
+  noremap <A-Down> <C-w>-
+  noremap <A-Left> <C-w><
+  noremap <A-Right> <C-w>>
+
+" Spell Check Toogle
+  map <leader>ss :setlocal spell!<cr>
+
+" Atalhos de Verificação Ortográfica
+  map <leader>sn ]s
+  map <leader>sp [s
+  map <leader>sa zg
+  map <leader>s? z=
+
+" Remap VIM 0 to first non-blank character
+  map 0 ^
+
+" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac
+  nmap <M-j> mz:m+<cr>`z
+  nmap <M-k> mz:m-2<cr>`z
+  vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+  vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 """""""""""""""""""""""""""""""""""""
-" 
 " Funcoes 
-"{{{1
 """"""""""""""""""""""""""""""""""""
-" Returns true if paste mode is enabled
-function! HasPaste()
-  if &paste
-    return 'PASTE MODE  '
-  en
-  return ''
-endfunction
-
-"}}}
+  source ~/.vim/funcoes.vim
