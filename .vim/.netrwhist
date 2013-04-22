@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/var/www/dbportal_prj'
+let g:netrw_dirhist_2='/var/www/funcoes8/tributario/baixabanco'
+let g:netrw_dirhist_3='/home/dbseller/.vim'
+let g:netrw_dirhist_4='/var/www'
+let g:netrw_dirhist_5='/var/www/dbpandora'
