@@ -1,0 +1,34 @@
+#!/usr/bin/php -q 
+<?php
+
+/**
+ * remove primeiro indice com nome do arquivo atual 
+ */
+array_shift($argv);
+
+/**
+ * argumentos passados para o script
+ */
+$aArgumentos = $argv;
+
+/**
+ * Opcao a ser executada
+ */
+$sOpcao = array_shift($aArgumentos);
+
+switch ($sOpcao) {
+
+  case 'status' :
+  default : 
+    require_once __DIR__ . '/cvsgit_status.php';
+  break;
+
+  case 'add':
+    require_once __DIR__ . '/cvsgit_add.php';
+  break;
+
+  case 'push' :
+    require_once __DIR__ . '/cvsgit_push.php';
+  break;
+
+}
