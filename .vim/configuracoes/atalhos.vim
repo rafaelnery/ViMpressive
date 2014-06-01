@@ -68,7 +68,6 @@ endif
   "
   " Atalhos de Plugins : {{{
   "
-  let g:ctrlp_map = '<c-o>'
   let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(CVS|git|hg|svn)$',
