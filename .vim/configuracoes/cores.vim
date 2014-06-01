@@ -1,6 +1,6 @@
 
 set background =dark
-colorscheme Tomorrow-Night-Bright 
+colorscheme jellybeans 
 "hi clear CursorColumn
 "hi clear CursorLine  
 hi clear TabLineFill
