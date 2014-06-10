@@ -49,3 +49,4 @@ let xml_syntax_folding=1                               " XML
 set shortmess        +=filmnrxoOtT                     " abbrev. of messages (avoids 'hit enter')
 set viewoptions       =folds,options,cursor,unix,slash " better unix / windows compatibility
 set virtualedit       =onemore                         " permite o cursor ficar na ultima letra da linha 
+set mouse             =n                           " permite o cursor ficar na ultima letra da linha 

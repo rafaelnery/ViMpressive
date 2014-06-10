@@ -1,4 +1,6 @@
 " Salvar com F2:w 
+"
+"
 map  <F2> <ESC>:w<CR>
 imap <F2> <ESC>:w<CR>
 
@@ -68,7 +70,6 @@ endif
   "
   " Atalhos de Plugins : {{{
   "
-  let g:ctrlp_cmd = 'CtrlP'
   let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(CVS|git|hg|svn)$',
     \ 'file': '\v\.(jpg|png|gif)$'
