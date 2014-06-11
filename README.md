@@ -1,5 +1,16 @@
-Copiando e Colando... 
----
+ [:smiling_imp:](https://github.com/rafaelnery "Me")
+Super Hiper Mega VIm Config
+===
 
-- Pasta Raiz de Usuário, para os arquivos do VI(M)
-- Apenas Copiar e colar
+* Instalação:
+> Descompactar o Pacote na pasta raiz do usuário
+
+Plugins Instalados
+----
+ - [VIm Firefox Remote](https://github.com/rafaelnery/vim-firefoxremote "Let's Go")
+ - [SuperTab](https://github.com/vim-scripts/SuperTab "Go!")
+ - [CtrlP](https://github.com/kien/ctrlp.vim "Vai!")
+ - [PDV(PHP Documentor for VIm)](https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim "Go To GitHub Project")
+ - [Align](https://github.com/vim-scripts/Align )
+ - [SQLUtilities](https://github.com/vim-scripts/SQLUtilities)
+
