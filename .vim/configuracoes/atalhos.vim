@@ -1,8 +1,31 @@
-" Salvar com F2:w 
-"
-"
-map  <F2> <ESC>:w<CR>
+"Abre arquivo em nova aba
+map gf :tabnew <cfile><CR>
+
+"Salvar
+map  <F2> <ESC>:w<CR> 
 imap <F2> <ESC>:w<CR>
+
+"
+" Atalhos de Plugins : {{{
+"
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_user_command = 'find %s -type f'
+let g:ctrlp_custom_ignore = {
+      \ 'dir':  '\v[\/]\.(CVS|git|hg|svn)$',
+      \ 'file': '\v\.(jpg|png|gif|pdf)$'
+      \ }
+"
+"}}}
+
+autocmd FileType php inoremap    <F7> <ESC>:call PhpDocSingle()<CR>
+autocmd FileType php nnoremap    <F7>      :call PhpDocSingle()<CR>
+autocmd FileType php vnoremap    <F7>      :call PhpDocRange()<CR>
+
+
+
+
+
 
 " Alterna entre Janelas Abertas
 noremap <C-j> <C-W>j
