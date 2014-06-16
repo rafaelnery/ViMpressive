@@ -8,8 +8,7 @@ set showtabline        =2
 set laststatus         =2
 
 " Formata Barra de Status
-set statusline         =%<%f\ \ %h%m%r%Y%=\www.dbseller.com.br\ linha:\ %l,total\ :%L,%c%V\ %P 
 set cursorline                                         " destaca linha  atual
 set cursorcolumn                                       " destaca coluna atual
-set number
+set number                                             " mostra numero da linha
 source ~/.vim/configuracoes/cores.vim
