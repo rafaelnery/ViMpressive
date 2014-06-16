@@ -1,9 +1,11 @@
- [:smiling_imp:](https://github.com/rafaelnery "Me")
+[:smiling_imp:](https://github.com/rafaelnery "Me")
 Super Hiper Mega VIm Config
-===
 
-* Instalação:
-> Descompactar o Pacote na pasta raiz do usuário
+
+Instalação
+---
+- Descompactar o Pacote na pasta raiz do usuário(.vim)
+- Adicionar ao .vimrc a linha 
 
 Plugins Instalados
 ----
