@@ -6,6 +6,9 @@ Instalação
 ---
 - Descompactar o Pacote na pasta raiz do usuário(.vim)
 - Adicionar ao .vimrc a linha 
+```viml
+source ~/.vim/bootstrap.vim
+```
 
 Plugins Instalados
 ----
