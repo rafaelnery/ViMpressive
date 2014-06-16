@@ -17,4 +17,5 @@ Plugins Instalados
  - [PDV(PHP Documentor for VIm)](https://github.com/vim-scripts/PDV--phpDocumentor-for-Vim "Go To GitHub Project")
  - [Align](https://github.com/vim-scripts/Align )
  - [SQLUtilities](https://github.com/vim-scripts/SQLUtilities)
+ - [Airline](https://github.com/bling/vim-airline "Fly to Airline")
 
