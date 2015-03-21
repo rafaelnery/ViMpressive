@@ -8,5 +8,5 @@ source $__VIMCONF/geral.vim
 source $__VIMCONF/atalhos.vim
 source $__VIMCONF/aparencia.vim
 source $__VIMCONF/arquivos.vim
-source $__VIMCONF/funcoes.vim
 set    viminfo^=%
+
