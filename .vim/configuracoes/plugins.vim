@@ -70,7 +70,12 @@
   " Mostra graficamente a arvore de alteração {
     Plugin 'sjl/gundo.vim'
   "}
-
+" Controle Remoto do Firefox {
+  Plugin 'rafaelnery/vim-firefoxremote'
+" }
+" AutoComplete na Pesquisa {
+  Plugin 'rafaelnery/searchcomplete' 
+"}
 
 
   call vundle#end()            
