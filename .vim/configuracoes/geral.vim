@@ -1,5 +1,4 @@
-" vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
-
+  " vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
 " Geral {
 filetype plugin on                                     " Plugins por tipo de arquivo
 filetype indent on                                     " Indentação por tipo de arquivo
@@ -26,7 +25,7 @@ set termencoding       =utf-8                          " Codificação do termin
 set fileformats        =unix,dos,mac                   " Define tipo de utilização do arquivo(quebras de linhas)
 set switchbuf          =useopen,usetab,newtab          " Comportamento nas trocas de janelas( Ctrl + Tab para mudar de aba)  
 "}
-" Recolher Pela Syntax {
+ " Recolher Pela Syntax {
 set foldmethod        =syntax
 set foldlevelstart    =1
 let javaScript_fold   =1                               " JavaScript
@@ -57,4 +56,17 @@ set mouse             =n                               " Utilizar o mouse fora d
   set splitbelow  
   set splitright
 "}
+" Persistent Undo {
+  
+  if has('persistent_undo') 
+     set undofile         " So is persistent undo ...
+     set undolevels=1000  " Maximum number of changes that can be undone
+     set undoreload=10000 " Maximum number lines to save for undo on a buffer reload"
+     execute('set undodir='.g:diretorio_undo)
+  endif
 
+"}
+" Backup {
+  execute('set directory='.g:diretorio_swap.',/tmp')
+  set backup
+"} hahaha maria

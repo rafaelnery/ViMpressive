@@ -4,9 +4,9 @@
   " Criando Variáveis {
   let $__VIMCONF       = expand("$HOME") . "/.vim/configuracoes" 
   let $BUNDLE          = expand("$HOME") . "/.vim/RNPlugins" 
-  let g:diretorio_undo = expand("$HOME") . "/.vim/Pessoal/undo"
-  let g:diretorio_tags = expand("$HOME") . "/.vim/Pessoal/tags"
-  let g:diretorio_bkps = expand("$HOME") . "/.vim/Pessoal/bkps" 
+  let g:diretorio_undo = expand("$HOME") . "/.vim/Conteudo/undo"
+  let g:diretorio_tags = expand("$HOME") . "/.vim/Conteudo/tags"
+  let g:diretorio_swap = expand("$HOME") . "/.vim/Conteudo/swap" 
   "}
   " Requerindo as configurações {
   source $__VIMCONF/plugins.vim

@@ -50,7 +50,7 @@
     Plugin 'bling/vim-airline'
   "}
   "Pesquisa de arquivos like CtrlP(Sublime) Commant(TextMate) {
-    Plugin 'git://git.wincent.com/command-t.git'
+    Plugin 'wincent/command-t'
   "}
   "Gerenciador de pacotes do vi {
     Plugin 'gmarik/Vundle.vim'
