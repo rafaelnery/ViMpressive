@@ -86,8 +86,9 @@
   autocmd FileType php vnoremap    <F7>      :call pdv#DocumentWithSnip()<CR>
   "}
   "Airline {
-  let g:airline#extensions#tabline#enabled      = 1
-  set laststatus         =2       "Sempre mostra barra de Mensagens / Necessário para o airline
+  let g:airline#extensions#tabline#enabled =1
+  let g:airline_powerline_fonts            =1
+  set laststatus                           =2       "Sempre mostra barra de Mensagens / Necessário para o airline
   "}
   "Command-T {
   inoremap <C-P> <ESC>:CommandT<CR>
