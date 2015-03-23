@@ -9,7 +9,6 @@
   set nocompatible 
   filetype off     
   call vundle#begin('~/.vim/RNPlugins')
-  
   " Esquema de Cores {
   "
     Plugin 'joedicastro/vim-github256'
@@ -65,7 +64,15 @@
   "GIT - Fugitive {
     Plugin 'tpope/vim-fugitive'
   "}
-  
+  " AutoTag Recria as tags do CTAGS quando salva {
+    Plugin 'craigemery/vim-autotag'
+  " }
+  " Mostra graficamente a arvore de alteração {
+    Plugin 'sjl/gundo.vim'
+  "}
+
+
+
   call vundle#end()            
   filetype plugin indent on    
 "}
@@ -103,5 +110,11 @@
   let g:syntastic_check_on_open            = 1
   let g:syntastic_check_on_wq              = 1
   "}
+  " gUndo  {
+    let g:gundo_preview_bottom = 1
+    let g:gundo_right          = 1
 
+    nnoremap tu <ESC>:GundoToggle<CR>
+    vnoremap tu <ESC>:GundoToggle<CR>
+  "}
 " }

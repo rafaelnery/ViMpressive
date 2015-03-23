@@ -3,7 +3,6 @@
 " Author: Rafael Serpa Nery<rafanery0@gmail.com> 
 " Version: $Id:$
 "
-
 "Abre arquivo em nova aba {
 map gf :tabnew <cfile><CR>
 " }
@@ -35,9 +34,17 @@ else
   endif
 endif
 " }
-" Toggle no modo de Colagem {
-  map <leader>pp :setlocal paste!<cr>
-" }
+" Toggles :( -> :) {
+  " Toggle modo de Colagem {
+    noremap tp :set paste!<cr>
+    vnoremap tp :set paste!<cr>
+  " }
+  " Toggle Highlighsearch {
+  
+    noremap th :set paste!<cr>
+    vnoremap th :set paste!<cr>
+  " }
+"}
 " Remove the Windows ^M - when the encodings gets messed up {
   noremap <Leader>m %s/<C-V><cr>//g<cr>
 " }
@@ -69,3 +76,7 @@ endif
 " Quando abrir um arquivo php  Ctrl + M salva executa o arquivo {
 autocmd FileType php noremap <C-M> :w!<CR>:!$HOME/bin/php %<CR>
 " }
+  " Repetir a operação com . para todas as linhas selecionadas {
+    vnoremap . :normal .<CR>
+  "}
+
