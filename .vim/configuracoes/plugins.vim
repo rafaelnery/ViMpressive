@@ -13,12 +13,24 @@
   "
     Plugin 'joedicastro/vim-github256'
     Plugin 'sjl/badwolf'
-    Plugin 'vim-scripts/candy.vim'
     Plugin 'nielsmadan/harlequin'
     Plugin 'nanotech/jellybeans.vim'
     Plugin 'vim-scripts/simpleandfriendly.vim'
     Plugin 'yearofmoo/Vim-Darkmate'
     Plugin 'altercation/vim-colors-solarized'
+    Plugin 'dsolstad/vim-wombat256i'
+    Plugin 'yuratomo/neon.vim'
+    Plugin 'tpope/vim-vividchalk'
+    Plugin 'Suave/vim-colors-guardian'
+    Plugin 'vim-scripts/candy.vim'
+    Plugin 'Lokaltog/vim-distinguished'
+    Plugin '29decibel/codeschool-vim-theme'
+    Plugin 'vim-scripts/twilight'
+    Plugin 'chriskempson/vim-tomorrow-theme'
+    Plugin 'tomasr/molokai'
+    Plugin 'sickill/vim-monokai'
+
+
   " }
   "Supertab *,* - Faz de tudo(ou quase) com a tecla tab {
     Plugin 'ervandew/supertab'
@@ -76,7 +88,9 @@
 " AutoComplete na Pesquisa {
   Plugin 'rafaelnery/searchcomplete' 
 "}
-
+" SQL Syntax para PGSql {
+  Plugin 'exu/pgsql.vim'
+"}
 
   call vundle#end()            
   filetype plugin indent on    
@@ -99,10 +113,33 @@
   inoremap <C-P> <ESC>:CommandT<CR>
   nnoremap <C-P> <ESC>:CommandT<CR>
   vnoremap <C-P> <ESC>:CommandT<CR>
+
+  
+  let g:CommandTMaxFiles  = 99999
+  let g:CommandTMaxDepth  = 99999
+ "" let g:CommandTMaxHeight = 50
+ "let g:CommandTCancelMap = ['<ESC>', '<C-c>'] "Vlw Ships
+
+  set wildignore+=modification  
+
   "}
   "TagBar {
   nnoremap tb <ESC>:TagbarToggle<CR>
   vnoremap tb <ESC>:TagbarToggle<CR>
+
+  let g:tagbar_autofocus   = 1
+  let g:tagbar_autoshowtag = 1
+  let g:tagbar_type_php    = {
+    \ 'ctagstype' : 'php',
+    \ 'kinds' : [
+      \ 'i:interfaces',
+      \ 'c:classes',
+      \ 'd:constant definitions',
+      \ 'f:functions',
+      \ 'j:javascript functions:1'
+    \ ]
+  \ }
+
   "}
   "PHP getters e setters {
   nnoremap <C-g> <ESC> :call phpacc#GenerateAccessors()<CR>
