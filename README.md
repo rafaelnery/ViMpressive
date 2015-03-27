@@ -1,7 +1,4 @@
 [:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
----
-Pre requisitos
----
 
 - Pré-Requisitos: 
   - ruby
