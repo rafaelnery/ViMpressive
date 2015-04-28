@@ -86,12 +86,14 @@
   Plugin 'rafaelnery/vim-firefoxremote'
 " }
 " AutoComplete na Pesquisa {
-  Plugin 'rafaelnery/searchcomplete' 
+""  Plugin 'rafaelnery/searchcomplete' 
 "}
 " SQL Syntax para PGSql {
   Plugin 'exu/pgsql.vim'
 "}
-
+" HTML5 Syntax e indent
+  Plugin 'othree/html5.vim'
+"}
   call vundle#end()            
   filetype plugin indent on    
 "}

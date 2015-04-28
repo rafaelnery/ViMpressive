@@ -74,7 +74,6 @@ endif
   vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 " }
 " Quando abrir um arquivo php  Ctrl + M salva executa o arquivo {
-autocmd FileType php noremap <C-M> :w!<CR>:!$HOME/bin/php %<CR>
 " }
   " Repetir a operação com . para todas as linhas selecionadas {
     vnoremap . :normal .<CR>
