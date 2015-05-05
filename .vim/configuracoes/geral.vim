@@ -68,5 +68,6 @@ set mouse             =n                               " Utilizar o mouse fora d
 "}
 " Backup {
   execute('set directory='.g:diretorio_swap.',/tmp')
+  execute('set backupdir='.g:diretorio_swap.',/tmp')
   set backup
 "} hahaha maria
