@@ -5,32 +5,23 @@
 " vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
 "
 " Instalação dos pacotes {
+"
   set runtimepath+=~/.vim/bundle/Vundle.vim
   set nocompatible 
   filetype off     
   call vundle#begin('~/.vim/RNPlugins')
   " Esquema de Cores {
-  "
     Plugin 'joedicastro/vim-github256'
     Plugin 'sjl/badwolf'
-    Plugin 'nielsmadan/harlequin'
     Plugin 'nanotech/jellybeans.vim'
-    Plugin 'vim-scripts/simpleandfriendly.vim'
     Plugin 'yearofmoo/Vim-Darkmate'
-    Plugin 'altercation/vim-colors-solarized'
     Plugin 'dsolstad/vim-wombat256i'
-    Plugin 'yuratomo/neon.vim'
-    Plugin 'tpope/vim-vividchalk'
     Plugin 'Suave/vim-colors-guardian'
-    Plugin 'vim-scripts/candy.vim'
     Plugin 'Lokaltog/vim-distinguished'
-    Plugin '29decibel/codeschool-vim-theme'
-    Plugin 'vim-scripts/twilight'
     Plugin 'chriskempson/vim-tomorrow-theme'
     Plugin 'tomasr/molokai'
     Plugin 'sickill/vim-monokai'
-
-
+      Plugin 'jdkanani/vim-material-theme'
   " }
   "Supertab *,* - Faz de tudo(ou quase) com a tecla tab {
     Plugin 'ervandew/supertab'
@@ -51,9 +42,6 @@
     Plugin 'tobyS/pdv'
       Plugin 'SirVer/ultisnips'
       Plugin 'honza/vim-snippets'
-  "}
-  "VIM TernJS {
-    Plugin 'marijnh/tern_for_vim'
   "}
   " Correção de SYNTAX do CSS - Syntasctic {
     Plugin 'vim-scripts/Better-CSS-Syntax-for-Vim'
@@ -85,9 +73,6 @@
 " Controle Remoto do Firefox {
   Plugin 'rafaelnery/vim-firefoxremote'
 " }
-" AutoComplete na Pesquisa {
-""  Plugin 'rafaelnery/searchcomplete' 
-"}
 " SQL Syntax para PGSql {
   Plugin 'exu/pgsql.vim'
 "}
@@ -176,5 +161,4 @@ call vundle#end()
     nnoremap tn <ESC>:NERDTreeToggle<CR>
     vnoremap tn <ESC>:NERDTreeToggle<CR>
   " }
-
-  " }
+"}
