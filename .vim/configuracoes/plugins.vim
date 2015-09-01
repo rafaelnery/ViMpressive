@@ -91,10 +91,20 @@
 " SQL Syntax para PGSql {
   Plugin 'exu/pgsql.vim'
 "}
-" HTML5 Syntax e indent
+" HTML5 Syntax e indent {
   Plugin 'othree/html5.vim'
 "}
-  call vundle#end()            
+
+" NerdTree =) {
+  Plugin 'scrooloose/nerdtree' 
+  Plugin 'Xuyuanp/nerdtree-git-plugin' "Plugin para o GIT
+"}
+" Vim Signify - Mostra alterações VCS {
+  Plugin 'mhinz/vim-signify'
+"}
+
+
+call vundle#end()            
   filetype plugin indent on    
 "}
 
@@ -162,4 +172,9 @@
     nnoremap tu <ESC>:GundoToggle<CR>
     vnoremap tu <ESC>:GundoToggle<CR>
   "}
-" }
+  " NERDTree {
+    nnoremap tn <ESC>:NERDTreeToggle<CR>
+    vnoremap tn <ESC>:NERDTreeToggle<CR>
+  " }
+
+  " }
