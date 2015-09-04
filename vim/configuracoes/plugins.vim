@@ -1,8 +1,7 @@
+" vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
 " 
 " Author: Rafael Serpa Nery<rafanery0@gmail.com>
 " Version: $Id:$
-"
-" vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
 "
 " Instalação dos pacotes {
 "
@@ -21,7 +20,8 @@
     Plugin 'chriskempson/vim-tomorrow-theme'
     Plugin 'tomasr/molokai'
     Plugin 'sickill/vim-monokai'
-      Plugin 'jdkanani/vim-material-theme'
+    Plugin 'zenorocha/dracula-theme', {'rtp' : 'vim/'}
+    Plugin 'jdkanani/vim-material-theme'
   " }
   "Supertab *,* - Faz de tudo(ou quase) com a tecla tab {
     Plugin 'ervandew/supertab'
@@ -50,7 +50,7 @@
     Plugin 'bling/vim-airline'
   "}
   "Pesquisa de arquivos like CtrlP(Sublime) Commant(TextMate) {
-    Plugin 'wincent/command-t'
+    Plugin 'ctrlpvim/ctrlp.vim'
   "}
   "Gerenciador de pacotes do vi {
     Plugin 'gmarik/Vundle.vim'
@@ -106,18 +106,18 @@ call vundle#end()
   let g:airline_powerline_fonts            =1
   set laststatus                           =2       "Sempre mostra barra de Mensagens / Necessário para o airline
   "}
-  "Command-T {
-  inoremap <C-P> <ESC>:CommandT<CR>
-  nnoremap <C-P> <ESC>:CommandT<CR>
-  vnoremap <C-P> <ESC>:CommandT<CR>
+  " CtrlP {
+    ""    inoremap <C-P> <ESC>:CommandT<CR>
+    ""    nnoremap <C-P> <ESC>:CommandT<CR>
+    ""    vnoremap <C-P> <ESC>:CommandT<CR>
+    ""
+    ""    
+    ""    let g:CommandTMaxFiles  = 99999
+    ""    let g:CommandTMaxDepth  = 99999
+   "" let g:CommandTMaxHeight = 50
+   "let g:CommandTCancelMap = ['<ESC>', '<C-c>'] "Vlw Ships
 
-  
-  let g:CommandTMaxFiles  = 99999
-  let g:CommandTMaxDepth  = 99999
- "" let g:CommandTMaxHeight = 50
- "let g:CommandTCancelMap = ['<ESC>', '<C-c>'] "Vlw Ships
-
-  set wildignore+=modification  
+    set wildignore+=modification,tmp,manuais,cache
 
   "}
   "TagBar {
@@ -139,16 +139,16 @@ call vundle#end()
 
   "}
   "PHP getters e setters {
-  nnoremap <C-g> <ESC> :call phpacc#GenerateAccessors()<CR>
-  vnoremap <C-g> <ESC> :call phpacc#GenerateAccessors()<CR>
+    nnoremap <C-g> <ESC> :call phpacc#GenerateAccessors()<CR>
+    vnoremap <C-g> <ESC> :call phpacc#GenerateAccessors()<CR>
   "}
   " Syntastic | Syntástico :) {
-  nnoremap ts <ESC>:SyntasticToggleMode<CR>
-  vnoremap ts <ESC>:SyntasticToggleMode<CR>
-  let g:syntastic_always_populate_loc_list = 1
-  let g:syntastic_auto_loc_list            = 1
-  let g:syntastic_check_on_open            = 1
-  let g:syntastic_check_on_wq              = 1
+    nnoremap ts <ESC>:SyntasticToggleMode<CR>
+    vnoremap ts <ESC>:SyntasticToggleMode<CR>
+    let g:syntastic_always_populate_loc_list = 1
+    let g:syntastic_auto_loc_list            = 1
+    let g:syntastic_check_on_open            = 1
+    let g:syntastic_check_on_wq              = 1
   "}
   " gUndo  {
     let g:gundo_preview_bottom = 1

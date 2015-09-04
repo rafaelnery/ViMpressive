@@ -7,11 +7,9 @@
 map gf :tabnew <cfile><CR>
 " }
 "Salvar {
-noremap  <F2> <ESC>:Salvar<CR>
-inoremap <F2> <ESC>:Salvar<CR>
-vnoremap <F2> <ESC>:Salvar<CR>
-noremap  tp <ESC>:set paste!<CR>
-inoremap tp <ESC>:set paste!<CR>
+noremap  <F2> <ESC>:write<CR>
+inoremap <F2> <ESC>:write<CR>
+vnoremap <F2> <ESC>:write<CR>
 " }
 " Alterna entre Janelas Abertas {
 noremap <C-j> <C-W>j
@@ -44,6 +42,10 @@ endif
     noremap th :set paste!<cr>
     vnoremap th :set paste!<cr>
   " }
+  " Toggle Paste {
+    noremap  tp <ESC>:set paste!<CR>
+    inoremap tp <ESC>:set paste!<CR>
+  "}
 "}
 " Remove the Windows ^M - when the encodings gets messed up {
   noremap <Leader>m %s/<C-V><cr>//g<cr>
