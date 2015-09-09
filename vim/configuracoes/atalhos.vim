@@ -60,20 +60,14 @@ endif
   noremap <C-l> <C-W>l
   noremap <C-h> <C-W>h
 " }
-" Redimensionando Janelas {
-  noremap <A-Up> <C-w>+
-  noremap <A-Down> <C-w>-
-  noremap <A-Left> <C-w><
-  noremap <A-Right> <C-w>>
-" }
 " Remap VIM 0 to first non-blank character {
   map 0 ^
 " }
 " Move a line of text using ALT+[jk] or Comamnd+[jk] on mac {
-  nmap <M-j> mz:m+<cr>`z
-  nmap <M-k> mz:m-2<cr>`z
-  vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-  vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+"" nmap <A-j> mz:m+<cr>`z
+"" nmap <A-k> mz:m-2<cr>`z
+"" vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
+"" vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
 " }
 " Quando abrir um arquivo php  Ctrl + M salva executa o arquivo {
 " }

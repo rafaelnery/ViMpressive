@@ -67,7 +67,25 @@
   - [Xuyuanp/nerdtree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin                     "Xuyuanp/nerdtree-git-plugin"          )
   Suporte a status dos arquivos no GIT
   - [mhinz/vim-signify](https://github.com/mhinz/vim-signify                                         "mhinz/vim-signify"                    )
-Sinaliza as mudanças do arquivo refernte ao controle de versão(CVS, GIT, SVN)
+  Sinaliza as mudanças do arquivo refernte ao controle de versão(CVS, GIT, SVN)
+
 
 #Atalhos 
- 
+
+| Sequencia de Teclas | Modo    | Resultado                                             |
+| ------------------- | ------- | ----------------------------------------------------- |
+| F2                  |  NORMAL | Salvar                                                |
+| gf                  |  NORMAL | Abrir em nova aba o arquivo sob o cursor              |
+| Ctrl + Espaço       |  NORMAL | Automcomplete                                         |
+| Tab                 |  NORMAL | Automcomplete                                         |
+| ,                   |  NORMAL | Tecla <leader>                                        |
+| Alt + Up            |  NORMAL | Redimensiona janela/divisa para Cima                  |
+| Alt + Down          |  NORMAL | Redimensiona janela/divisa para Baixo                 |
+| Alt + Left          |  NORMAL | Redimensiona janela/divisa para Esquerda              |
+| Alt + Right         |  NORMAL | Redimensiona janela/divisa para Direita               |
+| .                   |  VISUAL | Repete o ultimo comando com as linhas selecionadas    |
+| Ctrl + j            |  NORMAL | Move foco para janela abaixo                          |
+| Ctrl + k            |  NORMAL | Move foco para janela acima                           |
+| Ctrl + l            |  NORMAL | Move foco para janela acimaa direita                  |
+| Ctrl + h            |  NORMAL | Move foco para janela a esquerda                      |
+

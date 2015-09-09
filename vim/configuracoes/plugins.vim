@@ -64,9 +64,6 @@
   "GIT - Fugitive {
     Plugin 'tpope/vim-fugitive'
   "}
-  " AutoTag Recria as tags do CTAGS quando salva {
-    Plugin 'craigemery/vim-autotag'
-  " }
   " Mostra graficamente a arvore de alteração {
     Plugin 'sjl/gundo.vim'
   "}
@@ -79,7 +76,6 @@
 " HTML5 Syntax e indent {
   Plugin 'othree/html5.vim'
 "}
-
 " NerdTree =) {
   Plugin 'scrooloose/nerdtree' 
   Plugin 'Xuyuanp/nerdtree-git-plugin' "Plugin para o GIT
@@ -107,18 +103,9 @@ call vundle#end()
   set laststatus                           =2       "Sempre mostra barra de Mensagens / Necessário para o airline
   "}
   " CtrlP {
-    ""    inoremap <C-P> <ESC>:CommandT<CR>
-    ""    nnoremap <C-P> <ESC>:CommandT<CR>
-    ""    vnoremap <C-P> <ESC>:CommandT<CR>
-    ""
-    ""    
-    ""    let g:CommandTMaxFiles  = 99999
-    ""    let g:CommandTMaxDepth  = 99999
-   "" let g:CommandTMaxHeight = 50
-   "let g:CommandTCancelMap = ['<ESC>', '<C-c>'] "Vlw Ships
-
+    let g:ctrlp_max_files=100
+    let g:ctrlp_max_depth=40
     set wildignore+=modification,tmp,manuais,cache
-
   "}
   "TagBar {
   nnoremap tb <ESC>:TagbarToggle<CR>
