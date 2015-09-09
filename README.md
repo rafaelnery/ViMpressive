@@ -1,8 +1,9 @@
-[:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
----
-- Pré-Requisitos:
-  - ctags
-  - Sugestão de .vimrc
+# [:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
+
+# Pré-Requisitos:
+- ctags
+- Sugestão de .vimrc
+
   ```viml
   source ~/.vim/bootstrap.vim
   set background=dark
@@ -66,3 +67,6 @@ Mostras as tags(utiliza o ctags)
   Suporte a status dos arquivos no GIT
   - [mhinz/vim-signify](https://github.com/mhinz/vim-signify                                         "mhinz/vim-signify"                    )
 Sinaliza as mudanças do arquivo refernte ao controle de versão(CVS, GIT, SVN)
+
+#Atalhos 
+ 
