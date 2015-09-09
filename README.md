@@ -1,8 +1,9 @@
 # [:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
 
 # Pré-Requisitos:
-- ctags
-- Sugestão de .vimrc
+- ctags/exuberant-ctags
+
+# Sugestão de configuracao(.vimrc)
 
   ```viml
   source ~/.vim/bootstrap.vim
@@ -38,9 +39,9 @@
   - [SirVer/ultisnips](https://github.com/SirVer/ultisnips                                           "SirVer/ultisnips"                     )
   Snipets para o vim
   - [vim-scripts/Better-CSS-Syntax-for-Vim](https://github.com/vim-scripts/Better-CSS-Syntax-for-Vim "vim-scripts/Better-CSS-Syntax-for-Vim")
-Melhoria para a syntax de CSS(Suporte CSS3)
+  Melhoria para a syntax de CSS(Suporte CSS3)
   - [bling/vim-airline](https://github.com/bling/vim-airline                                         "bling/vim-airline"                    )
-Barra de Status do Vim(Ultramelhorada :])
+  Barra de Status do Vim(Ultramelhorada :])
   - [ctrlpvim/ctrlp.vim](https://github.com/ctrlpvim/ctrlp.vim                                       "ctrlpvim/ctrlp.vim"                   )
   Fuzzy finder para o vim, como no atom, sublime....
   - [gmarik/Vundle.vim](https://github.com/gmarik/Vundle.vim                                         "gmarik/Vundle.vim"                    )
@@ -48,7 +49,7 @@ Barra de Status do Vim(Ultramelhorada :])
   - [scrooloose/syntastic](https://github.com/scrooloose/syntastic                                   "scrooloose/syntastic"                 )
   Validador de Syntax
   - [majutsushi/tagbar](https://github.com/majutsushi/tagbar                                         "majutsushi/tagbar"                    )
-Mostras as tags(utiliza o ctags)
+  Mostras as tags(utiliza o *ctags*)
   - [craigemery/vim-autotag](https://github.com/craigemery/vim-autotag                               "craigemery/vim-autotag"               )
   Popula o Arquivo de Tags enquanto abre os arquivos
   - [tpope/vim-fugitive](https://github.com/tpope/vim-fugitive                                       "tpope/vim-fugitive"                   )
