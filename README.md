@@ -78,7 +78,7 @@
 | gf                  |  NORMAL | Abrir em nova aba o arquivo sob o cursor              |
 | Ctrl + Espaço       |  NORMAL | Automcomplete                                         |
 | Tab                 |  NORMAL | Automcomplete                                         |
-| ,                   |  NORMAL | Tecla <leader>                                        |
+| ,                   |  NORMAL | Tecla *leader*                                        |
 | Alt + Up            |  NORMAL | Redimensiona janela/divisa para Cima                  |
 | Alt + Down          |  NORMAL | Redimensiona janela/divisa para Baixo                 |
 | Alt + Left          |  NORMAL | Redimensiona janela/divisa para Esquerda              |
