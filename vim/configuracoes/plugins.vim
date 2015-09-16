@@ -83,6 +83,9 @@
 " Vim Signify - Mostra alterações VCS {
   Plugin 'mhinz/vim-signify'
 "}
+" Xdebug Syntax {
+  Plugin 'dominics/vim-filetype-xdebug'
+"}
 
 
 call vundle#end()            
