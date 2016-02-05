@@ -20,6 +20,7 @@
     Plugin 'chriskempson/vim-tomorrow-theme'
     Plugin 'tomasr/molokai'
     Plugin 'sickill/vim-monokai'
+    Plugin 'Haron-Prime/Antares'
     Plugin 'zenorocha/dracula-theme', {'rtp' : 'vim/'}
     Plugin 'jdkanani/vim-material-theme'
   " }
@@ -33,7 +34,8 @@
     Plugin 'Raimondi/delimitMate'
   " }
   "PHP getters & setters {
-    Plugin 'tobyS/php-accessors.vim'
+   " Plugin 'tobyS/php-accessors.vim'
+     Plugin 'docteurklein/php-getter-setter.vim'
   "}
   "Mustache Template System para o Vim {
     Plugin 'tobyS/vmustache'
@@ -86,12 +88,20 @@
 " Xdebug Syntax {
   Plugin 'dominics/vim-filetype-xdebug'
 "}
+" CVS MENU {
+  Plugin 'vim-scripts/cvsmenu.vim-updated'
+"}
+" Log Syntax{
+  Plugin 'dzeban/vim-log-syntax'
+"}
+" VIM CUCUMBER {
+  Plugin 'tpope/vim-cucumber'
+"}
 
 
 call vundle#end()            
   filetype plugin indent on    
 "}
-
 " Configurações/Atalhos para Plugins {
 
   " PHPDoc {
