@@ -9,6 +9,12 @@
   source ~/.vim/bootstrap.vim
   set background=dark
   ```
+# Instalação
+Após adicionar o bootstrap ao seu .vimrc(vim) ou init.vim(neovim)...
+basta Chamar 
+  ```viml
+  :PluginInstall
+  ```
 
 # Pacote de cores
   - [Dracula Theme](https://github.com/zenorocha/dracula-theme          "Dracula Theme")
