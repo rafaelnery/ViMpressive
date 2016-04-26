@@ -1,5 +1,7 @@
 # [:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
 
+[![Join the chat at https://gitter.im/rafaelnery/vim.config](https://badges.gitter.im/rafaelnery/vim.config.svg)](https://gitter.im/rafaelnery/vim.config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 # Pré-Requisitos:
 - ctags/exuberant-ctags
 
