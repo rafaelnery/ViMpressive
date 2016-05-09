@@ -39,13 +39,9 @@ endif
   " }
   " Toggle Highlighsearch {
   
-    noremap th :set paste!<cr>
-    vnoremap th :set paste!<cr>
+    noremap th :set hlsearch!<cr>
+    vnoremap th :set hlsearch!<cr>
   " }
-  " Toggle Paste {
-    noremap  tp <ESC>:set paste!<CR>
-    inoremap tp <ESC>:set paste!<CR>
-  "}
 "}
 " Remove the Windows ^M - when the encodings gets messed up {
   noremap <Leader>m %s/<C-V><cr>//g<cr>
@@ -74,4 +70,8 @@ endif
   " Repetir a operação com . para todas as linhas selecionadas {
     vnoremap . :normal .<CR>
   "}
-
+    
+  " Remover palavra a esquerda ou a direita  no modo inserção com CTRL + DEL ou CTRL + BACKSPACE {
+    imap <C-Del> <C-o>dw
+    imap <C-Backspace> <C-o>db
+  " }
