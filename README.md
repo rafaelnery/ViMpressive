@@ -1,24 +1,32 @@
-# [:smiling_imp:](https://github.com/rafaelnery "Me") Pacote de Confirgurações do VIm
+  ViMpressive
+===============
 
 [![Join the chat at https://gitter.im/rafaelnery/vim.config](https://badges.gitter.im/rafaelnery/vim.config.svg)](https://gitter.im/rafaelnery/vim.config?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-# Pré-Requisitos:
+  Dependências
+-----------------
+
 - ctags/exuberant-ctags
 
-# Sugestão de configuracao(.vimrc)
+  Instalação
+--------------
 
-  ```viml
+Após adicionar o bootstrap ao seu .vimrc(vim) ou init.vim(neovim)...
+
+```viml
+  :PluginInstall
+```
+
+  Sugestão de configuracao(.vimrc)
+------------------------------------
+```viml
   source ~/.vim/bootstrap.vim
   set background=dark
-  ```
-# Instalação
-Após adicionar o bootstrap ao seu .vimrc(vim) ou init.vim(neovim)...
-basta Chamar 
-  ```viml
-  :PluginInstall
-  ```
+```
 
-# Pacote de cores
+
+  Pacote de cores
+-------------------
   - [Dracula Theme](https://github.com/zenorocha/dracula-theme          "Dracula Theme")
   - [Github](https://github.com/joedicastro/vim-github256               "Github")
   - [Badwold](https://github.com/sjl/badwolf                            "Badwold")
@@ -31,7 +39,8 @@ basta Chamar
   - [Monokai](https://github.com/sickill/vim-monokai                    "Monokai")
   - [Material Theme](https://github.com/jdkanani/vim-material-theme     "Material Theme")
 
-#Plugins Instalados
+  Plugins Instalados
+----------------------
   - [ervandew/supertab](https://github.com/ervandew/supertab                                         "ervandew/supertab"                    )
   Executa ações adicionais com a tecla TAB
   - [docunext/closetag.vim](https://github.com/docunext/closetag.vim                                 "docunext/closetag.vim"                )
@@ -78,7 +87,8 @@ basta Chamar
   Sinaliza as mudanças do arquivo refernte ao controle de versão(CVS, GIT, SVN)
 
 
-#Atalhos 
+  Atalhos 
+-----------
 
 | Sequencia de Teclas | Modo    | Resultado                                             |
 | ------------------- | ------- | ----------------------------------------------------- |
