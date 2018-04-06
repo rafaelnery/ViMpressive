@@ -1,25 +1,19 @@
 " vim: set sw=2 ts=2 sts=2 et tw=100 foldmarker={,} foldlevel=0 foldmethod=marker:
-" Super Hiper Mega Configuração do VIMRC {
+" Super Hiper Mega Config for VIM {
 
   " Criando Variáveis {
-  let $__VIMCONF       = expand("$HOME") . "/.vim/configuracoes" 
-  let $BUNDLE          = expand("$HOME") . "/.vim/RNPlugins" 
-  let g:diretorio_undo = expand("$HOME") . "/.vim/Conteudo/undo"
-  let g:diretorio_tags = expand("$HOME") . "/.vim/Conteudo/tags"
-  let g:diretorio_swap = expand("$HOME") . "/.vim/Conteudo/swap" 
+  let $__VIMCONF       = expand("$HOME") . "/.vim/config" 
+  let $BUNDLE          = expand("$HOME") . "/.vim/repos" 
+  let g:diretorio_undo = expand("$HOME") . "/.vim/content/undo"
+  let g:diretorio_tags = expand("$HOME") . "/.vim/content/tags"
+  let g:diretorio_swap = expand("$HOME") . "/.vim/content/swap" 
   "}
-  " Requerindo as configurações {
-  source $__VIMCONF/plugins.vim
-  source $__VIMCONF/geral.vim
-  source $__VIMCONF/atalhos.vim
-  source $__VIMCONF/aparencia.vim
-  source $__VIMCONF/arquivos.vim
-  source $__VIMCONF/funcoes.vim
+  " Add config {
+  source $__VIMCONF/plugin.vim
+  source $__VIMCONF/general.vim
+  source $__VIMCONF/shortcut.vim
+  source $__VIMCONF/view.vim
+  source $__VIMCONF/file.vim
   set    viminfo^=%
-  "}
-  " Carregando Configurações do Usuário {
-    if filereadable("$HOME/.vimrc.local")
-      source $HOME/.vimrc.local
-    endif
   "}
 "}

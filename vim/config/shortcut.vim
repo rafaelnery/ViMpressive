@@ -7,8 +7,8 @@
 map gf :tabnew <cfile><CR>
 " }
 "Salvar {
-noremap  <F2> <ESC>:write<CR>
-inoremap <F2> <ESC>:write<CR>
+noremap  <F2> <ESC>:write<CR>"{
+inoremap <F2> <ESC>:write<CR>"}
 vnoremap <F2> <ESC>:write<CR>
 " }
 " Alterna entre Janelas Abertas {
@@ -59,19 +59,11 @@ endif
 " Remap VIM 0 to first non-blank character {
   map 0 ^
 " }
-" Move a line of text using ALT+[jk] or Comamnd+[jk] on mac {
-"" nmap <A-j> mz:m+<cr>`z
-"" nmap <A-k> mz:m-2<cr>`z
-"" vmap <A-j> :m'>+<cr>`<my`>mzgv`yo`z
-"" vmap <A-k> :m'<-2<cr>`>my`<mzgv`yo`z
-" }
-" Quando abrir um arquivo php  Ctrl + M salva executa o arquivo {
-" }
-  " Repetir a operação com . para todas as linhas selecionadas {
-    vnoremap . :normal .<CR>
-  "}
+" Repetir a operação com . para todas as linhas selecionadas {
+  vnoremap . :normal .<CR>
+"}
     
-  " Remover palavra a esquerda ou a direita  no modo inserção com CTRL + DEL ou CTRL + BACKSPACE {
-    imap <C-Del> <C-o>dw
-    imap <C-Backspace> <C-o>db
-  " }
+" Remover palavra a esquerda ou a direita  no modo inserção com CTRL + DEL ou CTRL + BACKSPACE {
+  imap <C-Del> <C-o>dw
+  imap <C-Backspace> <C-o>db
+" }

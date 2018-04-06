@@ -12,14 +12,11 @@ let g:html_indent_inctags  = "html,body,head,tbody"
 let g:html_indent_autotags = "th,td,tr,tfoot,thead"
 
 "Indentação
-
 set expandtab        " Use spaces instead of tabs
 set smarttab         " Be smart when using tabs ;)
 
-set shiftwidth =2    " 1 tab == 2 spaços
-set tabstop    =2    " 1 tab == 2 spaços
-"set linebreak          
-"set textwidth  =150 " Linebreak on 150 characters
+set shiftwidth =4    " 1 tab == 2 spaços
+set tabstop    =4    " 1 tab == 2 spaços
 
 set autoindent       "Auto indent
 set smartindent      "Smart indent
