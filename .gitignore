@@ -1,4 +1,1 @@
-/vim/RNPlugins
-/vim/Conteudo
-*~
-.netrwhist
+lazy-lock.json
