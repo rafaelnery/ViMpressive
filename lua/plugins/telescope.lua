@@ -7,6 +7,7 @@ return {
   keys = {
     {"<C-p>", "<cmd>Telescope find_files<CR>", desc="Buscar Arquivos" },
     {"<C-P>", "<cmd>Telescope find_files<CR>", desc="Buscar Arquivos" },
+    {"<leader>s", "<cmd>Telescope grep_string<CR>", desc="Buscar" },
   },
 
   opts = {
